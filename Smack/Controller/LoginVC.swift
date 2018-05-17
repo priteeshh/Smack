@@ -1,5 +1,5 @@
 //
-//  ChannelVC.swift
+//  LoginVC.swift
 //  Smack
 //
 //  Created by Preeteesh Remalli on 17/05/18.
@@ -8,18 +8,16 @@
 
 import UIKit
 
-class ChannelVC: UIViewController {
-    @IBOutlet weak var loginBtn: UIButton!
-    
+class LoginVC: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-     self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
+
+        // Do any additional setup after loading the view.
     }
 
     @IBAction func loginBtnTapped(_ sender: Any) {
-        performSegue(withIdentifier: TO_LOGIN, sender: nil)
+        dismiss(animated: true, completion: nil)
     }
     
-    
-
 }
