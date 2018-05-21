@@ -17,6 +17,8 @@
 		301F268320AD87F500C6BDB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301F268220AD87F500C6BDB5 /* Assets.xcassets */; };
 		301F268620AD87F500C6BDB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301F268420AD87F500C6BDB5 /* LaunchScreen.storyboard */; };
 		30375C1120B2CE3300D333F2 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30375C1020B2CE3300D333F2 /* UserDataService.swift */; };
+		30375C1320B2E12800D333F2 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30375C1220B2E12800D333F2 /* AvatarPickerVC.swift */; };
+		30375C1520B2E33A00D333F2 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30375C1420B2E33A00D333F2 /* AvatarCell.swift */; };
 		3088803220AF0C44007B137A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3088803120AF0C44007B137A /* Alamofire.framework */; };
 		3088803420AF0C55007B137A /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3088803320AF0C55007B137A /* SocketIO.framework */; };
 		3088803620AF0C59007B137A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3088803520AF0C59007B137A /* SwiftyJSON.framework */; };
@@ -42,6 +44,8 @@
 		301F268520AD87F500C6BDB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		301F268720AD87F500C6BDB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30375C1020B2CE3300D333F2 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		30375C1220B2E12800D333F2 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
+		30375C1420B2E33A00D333F2 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		3088803120AF0C44007B137A /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3088803320AF0C55007B137A /* SocketIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SocketIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3088803520AF0C59007B137A /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +106,7 @@
 			children = (
 				300F172B20AD9F37007912AA /* GradientView.swift */,
 				30D97D8520AF1ABF001DF9BB /* RoundedCornerButton.swift */,
+				30375C1420B2E33A00D333F2 /* AvatarCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 				300F172920AD99E5007912AA /* ChatVC.swift */,
 				30F5ED9620ADB7440022DC1F /* LoginVC.swift */,
 				30F5ED9820ADBA8C0022DC1F /* CreateAccountVC.swift */,
+				30375C1220B2E12800D333F2 /* AvatarPickerVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -297,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				300F172A20AD99E5007912AA /* ChatVC.swift in Sources */,
+				30375C1320B2E12800D333F2 /* AvatarPickerVC.swift in Sources */,
 				301F267C20AD87F400C6BDB5 /* AppDelegate.swift in Sources */,
 				30F5ED9920ADBA8C0022DC1F /* CreateAccountVC.swift in Sources */,
 				30375C1120B2CE3300D333F2 /* UserDataService.swift in Sources */,
@@ -304,6 +311,7 @@
 				300F172C20AD9F37007912AA /* GradientView.swift in Sources */,
 				300F172820AD9912007912AA /* ChannelVC.swift in Sources */,
 				30A42FD620AF024900C5BF98 /* AuthServices.swift in Sources */,
+				30375C1520B2E33A00D333F2 /* AvatarCell.swift in Sources */,
 				300F172320AD8A6D007912AA /* SWRevealViewController.m in Sources */,
 				30D97D8620AF1ABF001DF9BB /* RoundedCornerButton.swift in Sources */,
 				300F172F20ADAB96007912AA /* Constants.swift in Sources */,

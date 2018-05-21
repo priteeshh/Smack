@@ -41,6 +41,7 @@ class CreateAccountVC: UIViewController {
         
     }
     @IBAction func chooseAvatarBtnTapped(_ sender: Any) {
+        performSegue(withIdentifier: TO_AVATAR_PICKER, sender: nil)
     }
     @IBAction func closeBtnTapped(_ sender: Any) {
         performSegue(withIdentifier: TO_UNWIND_CHANNEL, sender: nil)
