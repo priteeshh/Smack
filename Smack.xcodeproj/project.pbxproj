@@ -16,6 +16,7 @@
 		301F268120AD87F400C6BDB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301F267F20AD87F400C6BDB5 /* Main.storyboard */; };
 		301F268320AD87F500C6BDB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301F268220AD87F500C6BDB5 /* Assets.xcassets */; };
 		301F268620AD87F500C6BDB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301F268420AD87F500C6BDB5 /* LaunchScreen.storyboard */; };
+		30375C1120B2CE3300D333F2 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30375C1020B2CE3300D333F2 /* UserDataService.swift */; };
 		3088803220AF0C44007B137A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3088803120AF0C44007B137A /* Alamofire.framework */; };
 		3088803420AF0C55007B137A /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3088803320AF0C55007B137A /* SocketIO.framework */; };
 		3088803620AF0C59007B137A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3088803520AF0C59007B137A /* SwiftyJSON.framework */; };
@@ -40,6 +41,7 @@
 		301F268220AD87F500C6BDB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		301F268520AD87F500C6BDB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		301F268720AD87F500C6BDB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30375C1020B2CE3300D333F2 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		3088803120AF0C44007B137A /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3088803320AF0C55007B137A /* SocketIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SocketIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3088803520AF0C59007B137A /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				30A42FD520AF024900C5BF98 /* AuthServices.swift */,
+				30375C1020B2CE3300D333F2 /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				300F172A20AD99E5007912AA /* ChatVC.swift in Sources */,
 				301F267C20AD87F400C6BDB5 /* AppDelegate.swift in Sources */,
 				30F5ED9920ADBA8C0022DC1F /* CreateAccountVC.swift in Sources */,
+				30375C1120B2CE3300D333F2 /* UserDataService.swift in Sources */,
 				30F5ED9720ADB7440022DC1F /* LoginVC.swift in Sources */,
 				300F172C20AD9F37007912AA /* GradientView.swift in Sources */,
 				300F172820AD9912007912AA /* ChannelVC.swift in Sources */,
