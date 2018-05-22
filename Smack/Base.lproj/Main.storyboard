@@ -430,6 +430,7 @@
                     <connections>
                         <outlet property="emailTxt" destination="TnW-Rn-NfC" id="Vfg-ZN-Gt3"/>
                         <outlet property="passwordTxt" destination="MPk-l3-agU" id="bU0-Qq-X6a"/>
+                        <outlet property="profileImage" destination="nh3-Ue-Wfu" id="bmm-4x-vNz"/>
                         <outlet property="userNameTxt" destination="mA8-kb-qTD" id="t7P-sW-uXN"/>
                         <segue destination="GTx-KM-e7B" kind="unwind" identifier="toUnwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="2iZ-0s-cIQ"/>
                         <segue destination="VJW-1j-LZA" kind="show" identifier="avatarPicker" id="zOE-y6-3Gh"/>
@@ -507,6 +508,7 @@
                                     <segment title="Dark"/>
                                     <segment title="Light"/>
                                 </segments>
+                                <color key="tintColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="pickerSegmentControllerChanger:" destination="VJW-1j-LZA" eventType="valueChanged" id="bgA-Lz-oLQ"/>
                                 </connections>
@@ -527,6 +529,7 @@
                     </view>
                     <connections>
                         <outlet property="pickerCollectionView" destination="I7Q-ZB-eF6" id="XJt-jf-TAb"/>
+                        <outlet property="segmentControl" destination="NPH-A2-xR5" id="cBt-7K-BEo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lyd-lT-WXO" userLabel="First Responder" sceneMemberID="firstResponder"/>

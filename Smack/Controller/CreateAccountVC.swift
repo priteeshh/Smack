@@ -13,6 +13,7 @@ class CreateAccountVC: UIViewController {
     @IBOutlet weak var userNameTxt: UITextField!
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
+    @IBOutlet weak var profileImage: UIImageView!
     //Varibles
     var avatarName = "profileDefault"
     var avatarColor = "[0.5,0.5,0.5,1]"
@@ -21,7 +22,13 @@ class CreateAccountVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        if UserDataService.instance.avatarName != ""{
+        profileImage.image = UIImage(named: UserDataService.instance.avatarName)
+            avatarName = UserDataService.instance.avatarName
+        }
+    }
     @IBAction func genrateBackGroundBtnTapped(_ sender: Any) {
     }
     @IBAction func createAccount(_ sender: Any) {
