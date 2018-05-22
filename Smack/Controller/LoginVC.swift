@@ -10,9 +10,11 @@ import UIKit
 
 class LoginVC: UIViewController {
 
+    @IBOutlet weak var userNameTxt: UITextField!
+    @IBOutlet weak var passwordTxt: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setUpVIew()
         // Do any additional setup after loading the view.
     }
 
@@ -22,5 +24,10 @@ class LoginVC: UIViewController {
     
     @IBAction func createBtnTapped(_ sender: Any) {
         performSegue(withIdentifier: TO_CREATE_ACCOUNT, sender: nil)
+    }
+    func setUpVIew(){
+        userNameTxt.attributedPlaceholder = NSAttributedString(string: "username", attributes: [NSAttributedStringKey.foregroundColor : smackPurplePlaceHolder])
+        passwordTxt.attributedPlaceholder = NSAttributedString(string: "password", attributes: [NSAttributedStringKey.foregroundColor : smackPurplePlaceHolder])
+        
     }
 }

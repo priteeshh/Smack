@@ -256,6 +256,8 @@
                         <viewLayoutGuide key="safeArea" id="Yrv-Xw-vZr"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="Dar-zB-Dzr" id="dbn-Fy-jUU"/>
+                        <outlet property="userNameTxt" destination="0pg-pj-mDq" id="yVq-qy-iFn"/>
                         <segue destination="10S-50-BTI" kind="show" identifier="toCreateAccount" id="xBl-x5-0ix"/>
                     </connections>
                 </viewController>
@@ -386,7 +388,7 @@
                                     <action selector="chooseAvatarBtnTapped:" destination="10S-50-BTI" eventType="touchUpInside" id="Z3q-4f-6ZI"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="nh3-Ue-Wfu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="nh3-Ue-Wfu" customClass="RoundedImage" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="132.5" y="335" width="110" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="C4d-VU-oWq"/>
@@ -404,9 +406,13 @@
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="genrateBackGroundBtnTapped:" destination="10S-50-BTI" eventType="touchUpInside" id="hZA-pV-5fW"/>
+                                    <action selector="genrateBackGroundBtnTapped:" destination="10S-50-BTI" eventType="touchUpInside" id="4V0-5Y-OTY"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="zcB-4g-wej">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.34901960780000002" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -414,12 +420,14 @@
                             <constraint firstItem="zW5-CL-mzX" firstAttribute="top" secondItem="rnh-om-G65" secondAttribute="bottom" constant="65" id="IqT-iH-hZS"/>
                             <constraint firstItem="rnh-om-G65" firstAttribute="centerX" secondItem="fdt-hK-v3s" secondAttribute="centerX" id="UbU-Kf-vD4"/>
                             <constraint firstItem="IHZ-6J-VZj" firstAttribute="centerX" secondItem="fdt-hK-v3s" secondAttribute="centerX" id="WP7-JP-q94"/>
+                            <constraint firstItem="zcB-4g-wej" firstAttribute="centerX" secondItem="fdt-hK-v3s" secondAttribute="centerX" id="cpP-9c-Z8r"/>
                             <constraint firstItem="5cr-FA-wjI" firstAttribute="trailing" secondItem="NMP-Cg-cfY" secondAttribute="trailing" constant="16" id="dTS-5J-hrZ"/>
                             <constraint firstItem="nFU-pt-SaK" firstAttribute="centerX" secondItem="fdt-hK-v3s" secondAttribute="centerX" id="dtr-qy-0jE"/>
                             <constraint firstItem="rnh-om-G65" firstAttribute="top" secondItem="gfv-ph-OtJ" secondAttribute="bottom" id="fjb-4w-4O2"/>
                             <constraint firstItem="nh3-Ue-Wfu" firstAttribute="centerX" secondItem="fdt-hK-v3s" secondAttribute="centerX" id="htj-lH-zxG"/>
                             <constraint firstItem="nh3-Ue-Wfu" firstAttribute="top" secondItem="IHZ-6J-VZj" secondAttribute="bottom" constant="50" id="lbW-j1-nb5"/>
                             <constraint firstItem="zW5-CL-mzX" firstAttribute="centerX" secondItem="fdt-hK-v3s" secondAttribute="centerX" id="m6Y-qi-NNq"/>
+                            <constraint firstItem="zcB-4g-wej" firstAttribute="centerY" secondItem="fdt-hK-v3s" secondAttribute="centerY" id="mDV-qw-u8C"/>
                             <constraint firstItem="NMP-Cg-cfY" firstAttribute="top" secondItem="5cr-FA-wjI" secondAttribute="top" constant="20" id="o5m-tU-Em8"/>
                             <constraint firstItem="nFU-pt-SaK" firstAttribute="top" secondItem="5cr-FA-wjI" secondAttribute="top" constant="50" id="pe8-kR-T1U"/>
                             <constraint firstItem="IHZ-6J-VZj" firstAttribute="top" secondItem="nFU-pt-SaK" secondAttribute="bottom" constant="30" id="pex-oY-Z9P"/>
@@ -431,6 +439,7 @@
                         <outlet property="emailTxt" destination="TnW-Rn-NfC" id="Vfg-ZN-Gt3"/>
                         <outlet property="passwordTxt" destination="MPk-l3-agU" id="bU0-Qq-X6a"/>
                         <outlet property="profileImage" destination="nh3-Ue-Wfu" id="bmm-4x-vNz"/>
+                        <outlet property="spinner" destination="zcB-4g-wej" id="qO0-XJ-sIk"/>
                         <outlet property="userNameTxt" destination="mA8-kb-qTD" id="t7P-sW-uXN"/>
                         <segue destination="GTx-KM-e7B" kind="unwind" identifier="toUnwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="2iZ-0s-cIQ"/>
                         <segue destination="VJW-1j-LZA" kind="show" identifier="avatarPicker" id="zOE-y6-3Gh"/>

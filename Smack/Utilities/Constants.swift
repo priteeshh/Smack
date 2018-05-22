@@ -20,6 +20,10 @@ let TO_LOGIN = "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
 let TO_UNWIND_CHANNEL = "toUnwindToChannel"
 let TO_AVATAR_PICKER = "avatarPicker"
+//Notification
+let NOTIF_USER_DATA_DID_CHANGE = Notification(name: "notiUserDataChange")
+//Color
+let smackPurplePlaceHolder = #colorLiteral(red: 0.3254901961, green: 0.4398674667, blue: 0.7752096057, alpha: 0.5)
 //UserDefaults
 let TOKEN_KEY = "token"
 let LOGGED_IN_KEY = "loggedin"
